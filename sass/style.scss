@@ -131,19 +131,19 @@ body {
     }
 }
 
-.services-background {
+.services-background, .portfolio-background {
     background-color: $color-blackPearl;
     display: flex;
     padding: 20px 0;
 
-    .services {
+    .services, .portfolio {
         width: 80%;
         margin: 20px auto;
         color: $color-swanWhite;
         display: flex;
         flex-wrap: wrap;
         
-        .services-title {
+        .services-title, .portfolio-title {
             display: flex;
             flex-wrap: wrap;
             text-align: center;
@@ -195,6 +195,51 @@ body {
             .text-center {
                 text-align: center;
             }
+        }
+
+        .portfolio-item {
+            width: 30%;
+            border: 1px $color-swanWhite solid;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: $color-swanWhite;
+
+            .item-image {
+                width: 100%;
+                height: 20vh;
+
+                background-size: cover;
+                background-position: center;
+            }
+
+            .item-description {
+                width: 95%;
+                height: 10vh;
+                color: $color-blackPearl;
+                margin: 3px auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.contact-us {
+    background-color: $color-swanWhite;
+    color: $color-blackPearl;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    .contact-element {
+        width: 30%;
+        text-align: center;
+        font-size: 10px;
+
+        i {
+            font-size: 30px;
+            margin-left: 5px;
         }
     }
 }
