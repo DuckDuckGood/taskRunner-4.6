@@ -7,6 +7,31 @@ $color-blackPearl: #1e272e;
 $color-swanWhite: #f7f1e3;
 $color-weirdGreen: #3ae374;
 
+// backgrounds
+.bg-bear {
+    background-image: url('https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.bg-bee {
+    background-image: url('https://images.pexels.com/photos/2949743/pexels-photo-2949743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.bg-rat {
+    background-image: url('https://images.pexels.com/photos/1010267/pexels-photo-1010267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.bg-butterfly {
+    background-image: url('https://images.pexels.com/photos/633437/pexels-photo-633437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.bg-monkey {
+    background-image: url('https://images.pexels.com/photos/731013/pexels-photo-731013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.bg-whale {
+    background-image: url('https://images.pexels.com/photos/892548/pexels-photo-892548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
 // styles
 body {
     margin: 0;
@@ -167,7 +192,6 @@ body {
         }
 
         .service {
-            width: 30%;
             padding: 10px;
             display: flex;
             flex-wrap: wrap;
@@ -198,7 +222,6 @@ body {
         }
 
         .portfolio-item {
-            width: 30%;
             border: 1px $color-swanWhite solid;
             border-radius: 3px;
             margin-bottom: 10px;
@@ -252,10 +275,42 @@ body {
     .container {
         width: 100%;
     }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .service {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .welcome {
+        .menu {
+            height: 5vh;
+        }
+
+        .welcome-banner {
+            margin-left: 10px;
+            font-size: 20px;
+    
+            p {
+                font-size: 30px;
+            }
+        }
+    }
 }
 
 @media (min-width: 960px) {
     .container {
         width: 960px;
+    }
+
+    .portfolio-item {
+        width: 30%;
+    }
+
+    .service {
+        width: 30%;
     }
 }
